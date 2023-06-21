@@ -95,7 +95,6 @@ CREATE TABLE login_pessoa (
     telefone bigint,
     senha varchar(127),
     email varchar(127) UNIQUE,
-    endereco point
 );
 
 CREATE TABLE veiculo (
@@ -125,7 +124,8 @@ CREATE TABLE participante_carona (
 CREATE TABLE avaliacao (
     id integer PRIMARY KEY REFERENCES participante_carona(id),
     nota smallint,
-    comentario text
+    comentario text,
+    data_avaliacao date
 );
 ```        
        
@@ -168,12 +168,12 @@ values
 
 insert into avaliacao (id, comentario, nota)
 values
-(1,'paia',2),
-(2,'maneirin',5),
-(3,'não respeita as leis de trânsito',4),
-(4,'bem rapidinho ele',5),
-(5,'passageiro tava com cachorro',1),
-(6,'passageiro falou muito',3)
+(1,'paia',2,'2022-03-15'),
+(2,'maneirin',5,'2021-09-28'),
+(3,'não respeita as leis de trânsito',4,'2023-05-10'),
+(4,'bem rapidinho ele',5,'2022-11-07'),
+(5,'passageiro tava com cachorro',1,'2023-02-19'),
+(6,'passageiro falou muito',3,'2021-12-03')
 ```
 
 
