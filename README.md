@@ -52,6 +52,8 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
 * Relatório que mostre as informações relacionadas a todos os usuários
   
 * Relatório que obtenha a avalição média de cada usuário, e o número total de avaliações
+  
+* Relatório que obtenha a quantidade de caronas feita em um dia.
 
  
  
@@ -177,7 +179,7 @@ values
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-#### 9.1	![Link para o Colab](https://colab.research.google.com/drive/1nPcN75w-1UrjmIBCwKdrHAuiW5bAQhCM?usp=sharing)
+#### 9.1	[Link para o Colab](https://colab.research.google.com/drive/1nPcN75w-1UrjmIBCwKdrHAuiW5bAQhCM?usp=sharing)
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
