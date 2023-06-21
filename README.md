@@ -64,14 +64,17 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Kailany faustino, Lucas codeco]
+    [Grupo01]: [Kailany Faustino, Lucas Codeco]
     • Endereço de pessoa não é descrito no mini mundo e existe no modelo conceitual
     • No veículo, falta data de fabricação e cor que não está descrito no mini mundo
 
     Obs: Trabalho muito bem organizado e de fácil entendimento. Os ajustes são pontuais e podem ser feitos de forma rápida
  
  
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo02]: [Marcela Starling, Isabella Bissoli]
+    Achamos que o trabalho está bem organizado, estruturado e ramificado, de forma que as ideias fiquem bem claras e sem muita confusão na hora de entender e fazer o estudo dos   
+    dados, porém se tratando de um "app" de caronas, teoricamente ele seria de graça, mas e se alguém quisesse ajudar na gasolina por exemplo? Apenas uma sugestão, em caso de 
+    alguns membros da carona se sentirem na vontade de ajudar.
 
 #### 5.2 Descrição dos dados 
     LOGIN: campo que armazena os dados da pessoa para efetuar o login no sistema.<br>
