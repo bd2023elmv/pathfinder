@@ -53,7 +53,7 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
   
 * Relatório que obtenha a avalição média de cada usuário, e o número total de avaliações
   
-* Relatório que obtenha a quantidade de caronas feita em um dia.
+* Relatório que obtenha a quantidade de caronas efetuadas em um dia.
 
  
  
