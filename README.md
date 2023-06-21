@@ -94,7 +94,8 @@ CREATE TABLE login_pessoa (
     nome varchar(127),
     telefone bigint,
     senha varchar(127),
-    email varchar(127) UNIQUE
+    email varchar(127) UNIQUE,
+    endereco point
 );
 
 CREATE TABLE veiculo (
