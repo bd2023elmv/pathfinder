@@ -38,7 +38,7 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
  
 ![Alt text](./src/prototipo.png)
-[Design no Figma](https://www.figma.com/file/hMKfHIgBpal9FpKLGiPlvf/Untitled?type=design&fuid=956652625531670595){:target="_blank"}
+[Design no Figma](https://www.figma.com/file/hMKfHIgBpal9FpKLGiPlvf/Untitled?type=design&fuid=956652625531670595){:target="_blank" rel="noopener"}
  
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
    
@@ -55,7 +55,7 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
 
  
  
-#### 4.3 TABELA DE DADOS DO SISTEMA: [Exemplo de Tabela de dados da Empresa Pathfinder](https://docs.google.com/spreadsheets/d/1fEzlYw6J-TvsMX7OhIYmhlUsq6KIayEMO9RtgxbyaaM/edit?usp=sharing){:target="_blank"}
+#### 4.3 TABELA DE DADOS DO SISTEMA: [Exemplo de Tabela de dados da Empresa Pathfinder](https://docs.google.com/spreadsheets/d/1fEzlYw6J-TvsMX7OhIYmhlUsq6KIayEMO9RtgxbyaaM/edit?usp=sharing){:target="_blank" rel="noopener"}
     
     
 ### 5.MODELO CONCEITUAL<br>       
