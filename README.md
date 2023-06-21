@@ -77,11 +77,11 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
     alguns membros da carona se sentirem na vontade de ajudar.
 
 #### 5.2 Descrição dos dados 
-    LOGIN: campo que armazena os dados da pessoa para efetuar o login no sistema.<br>
-    PESSOA: campo que armazena dados de identificação e formas de comunicação de pessoa.<br>
-    CARONA: campo que armazena pessoas e veículos relacionados a carona, e se <br>
-    VEICULO: campo que contém todos os veículos de uma pessoa.<br>
-    AVALIACAO: campo que relaciona pessoa com carona e possibilita a avaliação entre pessoas que participaram de uma carona.<br>
+    LOGIN: campo que armazena dados necessários para efetuar o login no sistema, como nome de usuário e senha.
+    PESSOA: campo que armazena informações de identificação e formas de comunicação da pessoa, incluindo nome, telefone, email e endereço.
+    CARONA: campo que armazena informações relacionadas a uma carona, como local de partida, local de chegada, horário de partida, horário de chegada e veículo utilizado na carona.
+    VEICULO: campo que contém informações sobre os veículos registrados por uma pessoa, incluindo atributos como cor, número da placa, número de assentos, marca, data de fabricação e descrição do tipo de veículo.
+    AVALIACAO: campo que relaciona uma pessoa com uma carona e possibilita a avaliação entre as pessoas que participaram da carona. Esse campo pode incluir atributos como nota, comentário e data da avaliação.
 
 
 ### 6	MODELO LÓGICO<br>
