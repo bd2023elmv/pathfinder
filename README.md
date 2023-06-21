@@ -21,15 +21,17 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
 ### 3.MINI-MUNDO<br>
 
 
-> No sistema Pathfinder, existem diversas entidades e relacionamentos que precisam ser considerados para que o sistema funcione corretamente. A entidade Pessoa representa os usuários do sistema, sendo necessário registrar informações como nome, telefone, email e endereço de cada pessoa, assim como deverá logar nesse sistema com senha e nome de usuário.
+> No sistema Pathfinder, existem diversas entidades e relacionamentos que precisam ser considerados para que o sistema funcione corretamente. A entidade Pessoa representa os usuários do sistema, sendo necessário registrar informações como nome, telefone, email e endereço de cada pessoa, assim como poderá se cadastrar e fazer um login no sistema, usando um username e uma password, além disso qualquer pessoa pode ter um veículo ou não, basta registrar.
 
-> A entidade Carona representa as caronas disponíveis para serem oferecidas e solicitadas no sistema. Cada Carona possui informações como o local de saída, horário de saída, local de destino e horário de chegada. Além disso, é necessário registrar os dados da pessoa que cederá a carona, das pessoas que receberam a carona e também informações do veículo que será usado para a carona, como placa, tipo de veículo, marca, cor e número de assentos.
+> A entidade Carona representa as caronas disponíveis para serem oferecidas e solicitadas no sistema. Cada Carona possui informações como as pessoas que participaram da oferta, local de chegada, local de saída, horário de chegada, horário de saída e o veículo usado na oferta da carona, o veículo possui os atributos cor, numero da placa, assentos totais, marca, data de fabricação e a descrição de qual tipo de veículo ele é. Para acontecer uma carona, uma pessoa deve ofertar carona e escolher a quantidade de assentos que deseja ofertar na carona.
 
-> O relacionamento entre Pessoa e Carona é 1:N, ou seja, uma pessoa pode oferecer várias caronas, mas uma carona só pode ser cedida por uma pessoa. Por outro lado, uma pessoa que procura uma carona pode selecionar uma das caronas disponíveis, criando um relacionamento N:1 entre Pessoa e Carona.
+> A entidade Avaliação representa a avaliação dos usuários quanto a uma carona ou quanto a um passageiro. Cada Avaliação possui informações da nota e do comentário da pessoa, este dado será guardado com uma data de avaliação. Para acontecer uma avaliação, deve acontecer antes uma Carona, para que seja possível ou o passageiro avaliar a carona ou o motorista avaliar os passageiros.
+
+> O relacionamento entre Pessoa e Carona é 1:N, ou seja, uma pessoa pode oferecer várias caronas ao oferta-las, mas uma carona só pode ser cedida por uma pessoa. Por outro lado, uma pessoa que procura uma carona pode selecionar uma das caronas disponíveis, criando um relacionamento N:1 entre Pessoa e Carona.
 
 > Também é possível que uma pessoa que oferta a carona possa visualizar todas as pessoas interessadas em participar da carona e decidir se aceita ou não a carona. Nesse caso, temos um relacionamento N:1 entre Carona e Pessoa.
-> 
-> Por fim, uma pessoa pode avaliar a carona e o passageiro, o que cria um relacionamento N:1 entre Pessoa e Avaliação, e outro relacionamento N:1 entre Carona e Avaliação. A entidade Avaliação possui atributos como nota e comentário, representando a opinião da pessoa sobre a carona e/ou passageiro.
+
+> Por fim, uma pessoa pode avaliar a carona e o passageiro, o que cria um relacionamento N:1 entre Pessoa e Avaliação, e outro relacionamento N:1 entre Carona e Avaliação.
 
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
