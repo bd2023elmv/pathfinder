@@ -4,7 +4,7 @@ CREATE TABLE login_pessoa (
     telefone bigint,
     senha varchar(127),
     email varchar(127) UNIQUE,
-    endereco point,
+    endereco point
 );
 
 CREATE TABLE veiculo (
@@ -44,18 +44,9 @@ CREATE TABLE tipo_veiculo (
     max_assentos integer
 );
 
-CREATE TABLE rua (
-    id serial PRIMARY KEY UNIQUE,
-    logradouro varchar(127),
-    local_inicio point,
-    local_fim point,
-    id_bairro integer REFERENCES bairro(id)
-);
-
-CREATE TABLE bairro (
+CREATE TABLE estado (
     id serial PRIMARY KEY,
-    nome varchar(127),
-    id_cidade integer REFERENCES cidade(id)
+    nome varchar(127)
 );
 
 CREATE TABLE cidade (
@@ -64,7 +55,16 @@ CREATE TABLE cidade (
     id_estado integer REFERENCES cidade(id)
 );
 
-CREATE TABLE estado (
+CREATE TABLE bairro (
     id serial PRIMARY KEY,
-    nome varchar(127)
+    nome varchar(127),
+    id_cidade integer REFERENCES cidade(id)
+);
+
+CREATE TABLE rua (
+    id serial PRIMARY KEY UNIQUE,
+    logradouro varchar(127),
+    local_inicio point,
+    local_fim point,
+    id_bairro integer REFERENCES bairro(id)
 );

@@ -1,16 +1,16 @@
 INSERT INTO login_pessoa (nome, telefone, senha, email, endereco) VALUES
-('Norma Fisher',27900090266,'c97997164f74d4e24b3d7a4ce0e8b25c','Norf@hotmail.com', (0, 1)), -- 1
-('Jorge Sullivan',27900093370,'3a141651ed83375318e912e56e61f552','jjorsu@hotmail.com', (2, 1)), -- 2
-('Elizabeth Woods',27900082926,'5f549708104b8b011a2527a1414b4986','elizwoods1@hotmail.com', (0, 2)), -- 3
-('Susan Wagner',27900067247,'6d229d10cc8db19c74a2452775d42a63','susanmwz@hotmail.com', (2, 2)), -- 4
-('Peter Montgomery',27900036845,'2f01779b820d01742b0835f7d7dd603b','peter3421m@hotmail.com', (0, 3)), -- 5
-('Theodore Mcgrath',27900002919,'5a9e0eb798c7fe93a20309cb709e5dee','theomogr2@hotmail.com', (2, 3)), -- 6
-('Victor Oliveira',27765432109,'d72Idvfd6yhcUA46RsnWpg7pRp0eDgGD','victoroliveira34vv@gmail.com', (0, 4)), -- 7
-('Isabella Bissoli',27551234567,'fSNkLs8J0ftOwAEbcbSr2DaFg7K2Z3pP','isis3454@hotmail.com', (2, 4)), -- 8
-('Lucas Codeco',27988877776,'edbkneaDO1VpSAOhEt8b6Fjo26EGQUFU','lucas022supra@gmail.com', (0, 5)), -- 9
-('Eduardo Próspero',27122233339,'0fIfdDxaZ3XhIUusxUr55xKEVB3dJTOH','caminhao@ifes.edu.br', (2, 5)); -- 10
+('Norma Fisher',27900090266,'c97997164f74d4e24b3d7a4ce0e8b25c','Norf@hotmail.com', '(0, 1)'), -- 1
+('Jorge Sullivan',27900093370,'3a141651ed83375318e912e56e61f552','jjorsu@hotmail.com', '(2, 1)'), -- 2
+('Elizabeth Woods',27900082926,'5f549708104b8b011a2527a1414b4986','elizwoods1@hotmail.com', '(0, 2)'), -- 3
+('Susan Wagner',27900067247,'6d229d10cc8db19c74a2452775d42a63','susanmwz@hotmail.com', '(2, 2)'), -- 4
+('Peter Montgomery',27900036845,'2f01779b820d01742b0835f7d7dd603b','peter3421m@hotmail.com', '(0, 3)'), -- 5
+('Theodore Mcgrath',27900002919,'5a9e0eb798c7fe93a20309cb709e5dee','theomogr2@hotmail.com', '(2, 3)'), -- 6
+('Victor Oliveira',27765432109,'d72Idvfd6yhcUA46RsnWpg7pRp0eDgGD','victoroliveira34vv@gmail.com', '(0, 4)'), -- 7
+('Isabella Bissoli',27551234567,'fSNkLs8J0ftOwAEbcbSr2DaFg7K2Z3pP','isis3454@hotmail.com', '(2, 4)'), -- 8
+('Lucas Codeco',27988877776,'edbkneaDO1VpSAOhEt8b6Fjo26EGQUFU','lucas022supra@gmail.com', '(0, 5)'), -- 9
+('Eduardo Próspero',27122233339,'0fIfdDxaZ3XhIUusxUr55xKEVB3dJTOH','caminhao@ifes.edu.br', '(2, 5)'); -- 10
 
-INSERT INTO tipo_veiculo (descricao, max_assentos) VALUE
+INSERT INTO tipo_veiculo (descricao, max_assentos) VALUES
 ('Carro', 5), -- 1
 ('Carro dois assentos', 2), -- 2
 ('Motocicleta', 2), -- 3
