@@ -167,7 +167,7 @@ values
 (1,1,5),
 (2,5,1);
 
-insert into avaliacao (id, comentario, nota)
+insert into avaliacao (id, comentario, nota, data_avaliacao)
 values
 (1,'paia',2,'2022-03-15'),
 (2,'maneirin',5,'2021-09-28'),
