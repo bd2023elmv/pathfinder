@@ -329,6 +329,7 @@ WHERE horario_saida IS NOT NULL AND horario_chegada IS NOT NULL;
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 **Link dos slides da apresentação:** https://1drv.ms/p/s!Ahit4mp5ws5lgecPM1IqUeApokrDzg?e=2PkFFh
+
 **Link do vídeo da apresentação no modelo pecha kucha:** https://www.youtube.com/watch?v=a9Qp_tCMcF8
 
 
