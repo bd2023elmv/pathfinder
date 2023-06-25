@@ -223,22 +223,113 @@ values
 
 ### 10 RELATÓRIOS E GRÁFICOS
 
-#### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
-#### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
-#### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
+## Relatório 1
 
-    
+**Objetivo:** Saber quem são os motoristas com maior número de viagens assim como o número de viagens desses motoristas
+
+```sql
+SELECT lp.nome AS motorista COUNT(c.id) AS carona FROM login_pessoa lp
+INNER JOIN veiculo v ON v.id_dono = lp.id
+INNER JOIN carona c ON c.id_veiculo = v.id
+GROUP BY motorista;
+```
+
+|motorista	|caronas|
+| ------ | ------- |
+|Elizabeth Woods |	1|
+|Eduardo Próspero|	1|
+|Susan Wagner|	1|
+|Jorge Sullivan|	1|
+|Peter Montgomery|	3|
+|Norma Fisher|	2|
+|Theodore Mcgrath|	3|
+
+ ![Alt text](./src/grafico_1.png)
+
+## Relatório 2
+
+**Objetivo:** Conhecer os tipos de veículo mais e menos utilizados pelos usuários.
+
+```sql
+SELECT tv.descricao as "tipo de veiculo", COUNT(c.id) as "numero de caronas" FROM carona c
+INNER JOIN veiculo v ON c.id_veiculo = v.id
+INNER JOIN tipo_veiculo tv ON v.id_tipo = tv.id
+GROUP BY "tipo de veiculo";
+```
+
+| motorista      | caronas |
+| -------------- | ------- |
+| Elizabeth Woods | 1       |
+| Eduardo Próspero | 1       |
+| Susan Wagner    | 1       |
+| Jorge Sullivan  | 1       |
+| Peter Montgomery | 3       |
+| Norma Fisher    | 2       |
+| Theodore McGrath | 3       |
+
+
+ ![Alt text](./src/grafico_2.png)
+
+## Relatório 3
+**Objetivo:** Identificar tendências em número de caronas ao longo do tempo
+
+```sql
+SELECT DATE(horario_saida) AS dia, COUNT(*) AS "quantidade de viagens"
+FROM carona
+GROUP BY dia;
+```
+
+| dia        | quantidade de viagens |
+| ---------- | --------------------- |
+| 2023-01-23 | 1                     |
+| 2023-02-04 | 2                     |
+| 2023-02-10 | 2                     |
+| 2023-02-05 | 1                     |
+| 2023-02-03 | 3                     |
+| 2023-02-02 | 1                     |
+| 2022-12-31 | 2                     |
+
+ ![Alt text](./src/grafico_3.png)
+
+## Relatório 4
+**Objetivo:** Identificar áreas com grande número de caronas feitas
+
+```sql
+SELECT local_saida, local_chegada FROM carona
+WHERE local_saida IS NOT NULL AND local_chegada IS NOT NULL;
+```
+
+| local_saida | local_chegada |
+| ----------- | ------------- |
+| (1,0)       | (1,1)         |
+| (-1,-1)     | (0,0)         |
+| (-3,-2)     | (-1,2)        |
+| (-2,0)      | (2,5)         |
+| (1,1)       | (1.2,8)       |
+| (2,-5)      | (2,3)         |
+| (10,-10)    | (0,0)         |
+| (7,-5)      | (8,3)         |
+| (2,0)       | (2,-3)        |
+| (-2,5)      | (-20,-3)      |
+
+ ![Alt text](./src/grafico_4.png)
+
+## Relatório 5
+**Objetivo:** Obter em uma unidade simples uma intuição geral do uso do Pathfinder
+
+```sql
+SELECT SUM(horario_chegada - horario_saida) AS tempo FROM carona
+WHERE horario_saida IS NOT NULL AND horario_chegada IS NOT NULL;
+```
+
+| tempo               |
+| ------------------- |
+| 0 days 09:55:31.776970 |
+
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
-#### a) Modelo (pecha kucha)<br>
-#### b) Tempo de apresentação 6:40 
-
-># Marco de Entrega 03: Itens 10 e 11<br>
-<br>
-<br>
-
-
+**Link do vídeo da apresentação no modelo pecha kucha:** https://www.youtube.com/watch?v=a9Qp_tCMcF8
 
 
 ### 12 FORMATACAO NO GIT:<br> 
